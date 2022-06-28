@@ -2,18 +2,37 @@
     display: flex;
   justify-content: center;
   align-content: center;
+background-color: #2E0249;
+  flex-direction: column;
 } 
-
+#div{
+    text-align: center;
+}
+#heading{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 10px;
+    color: #F806CC;
+}
+h1{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 20px;
+}
  .container{
-/*     width: 20vw; */
+    /* width: 20vw; */
     height: auto;
-    display: auto;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     background-color: black; 
+    align-self: center;
     /* grid-auto-rows: 100px; */
 } 
 .item{
+    /* width: 100px; */
     background-color: pink;
     border: solid 1px black;
     display: flex;
@@ -27,14 +46,15 @@
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .item18{
     grid-row: 6/7;
     grid-column: 1/span 2;
 }
 .wheat{
-    background-color: antiquewhite;
+    background-color: #570A57;
 }
 .red{
-    background-color: rgb(165, 65, 65);
+    background-color: #A91079;
 }
