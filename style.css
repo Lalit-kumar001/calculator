@@ -1,0 +1,40 @@
+ body{
+    display: flex;
+  justify-content: center;
+  align-content: center;
+} 
+
+ .container{
+    width: 20vw;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: black; 
+    /* grid-auto-rows: 100px; */
+} 
+.item{
+    background-color: pink;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item1{
+    grid-row: 1/2;
+    grid-column: -1/1;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+.item18{
+    grid-row: 6/7;
+    grid-column: 1/span 2;
+}
+.wheat{
+    background-color: antiquewhite;
+}
+.red{
+    background-color: rgb(165, 65, 65);
+}
