@@ -192,9 +192,10 @@ item18.addEventListener('click', function () {
 item2.addEventListener('click', function () {
     operand1 = "";
     operand2 = "";
+    operator="";
     result = "";
     item1.innerText = empty;
-    var html = "<h1>" + result + "</h1>";
+    var html = "<h1> </h1>";
     item1.innerHTML = html;
 });
 // handling operator click 
