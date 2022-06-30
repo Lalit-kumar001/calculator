@@ -79,6 +79,8 @@ item8.addEventListener('click', function () {
     }
 });
 
+
+
 item10.addEventListener('click', function () {
     if (operator=="") {
         operand1 += "4";
@@ -205,6 +207,13 @@ item17.addEventListener('click', function () {
     }
     operator = '+';
 });
+item3.addEventListener('click', function () {
+    if (result) {
+        operand1 = result;
+    }
+    operator = '^';
+});
+
 item9.addEventListener('click', function () {
     if (result) {
         operand1 = result;
@@ -251,7 +260,13 @@ item20.addEventListener('click', function () {
     console.log('res')
     if (operand1 != 0 || operand2 != 0) {
         
-        result = eval(operand1 + " " + operator + " " + operand2);
+        if(operator=="^"){
+            result=Math.pow(operand1,operand2);
+        }
+        else{
+            result = eval(operand1 + " " + operator + " " + operand2);
+        }
+        
     }
     item1.innerText = empty;
     var html = "<h1>" + result + "</h1>";
